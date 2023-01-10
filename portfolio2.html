@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Animated Portfolio</title>
+    <style>
+      /* Add some basic styling for the page */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      
+      /* Define a class for the portfolio items */
+      .portfolio-item {
+        width: 300px;
+        height: 300px;
+        margin: 30px auto;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Add a hover effect to show the portfolio item's details */
+      .portfolio-item:hover .details {
+        opacity: 1;
+      }
+
+      /* Add some basic styling for the details */
+      .details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      /* Add some basic styling for the title */
+      .title {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      /* Add some basic styling for the description */
+      .description {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my portfolio!</h1>
+
+    <div class="portfolio-item">
+      <img src="project1.gif" alt="Project 1">
+      <div class="details">
+        <div class="title">Project 1</div>
+        <div class="description">A responsive website built for a local business/establishments.</div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="project2.gif" alt="Project 2">
+      <div class="details">
+        <div class="title">Project 2</div>
+        <div class="description">A working calculator.</div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <img src="project3.png" alt="Project 3">
+      <div class="details">
+        <div class="title">Project 3</div>
+        <div class="description">A self-made website about myself.</div>
+      </div>
+    </div>
+
+  </body>
+</html>
